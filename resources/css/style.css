@@ -1,0 +1,284 @@
+html {
+  font-size: 18px;
+  font-family: Garamond;
+  line-height: 1.4;
+}
+
+header  {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  align-content: center;
+  margin: 0px auto;
+}
+
+/* Header Navigation */
+
+nav {
+  background-color: cadetblue;
+  display: flex;
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 1rem;
+}
+
+nav div {
+  display: flex;
+  align-items: flex-start;
+}
+
+nav img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
+  margin-left: 2rem;
+}
+
+.menu span {
+  display: inline;
+  padding: 1rem 2rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Banner */
+
+header .slogan {
+  justify-content: flex-end;
+}
+
+.slogan {
+  display: flex;
+}
+
+.banner h1 {
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2rem 5rem;
+  position: relative;
+  top: 10rem;
+  margin-right: 2rem;
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+  flex-direction: column;
+}
+
+.services img {
+  padding: 0 3rem;
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+#exam {
+  width: 3.5rem;
+}
+
+#product {
+  line-height: 1.5rem;
+}
+
+/* About */
+
+.about {
+  justify-content: center;
+  display: flex;
+}
+
+.headline {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.title {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding:  .5rem 1.25rem;
+  width: 10rem;
+}
+
+.headline p {
+  padding: 1rem 0px;
+}
+
+/* Footer */
+
+.bottom {
+  background-color: azure;
+  width: 100%;
+  padding: 4rem 3rem;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.copyright {
+  justify-content: center;
+  display: flex;
+}
+
+.copyright img {
+  width: auto;
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+/* Media Queries */
+
+/* Tablet */
+
+@media only screen and (max-width: 1024px) {
+
+  /* Header */
+
+  header {
+    position: relative;
+    height: 22rem;
+  }
+  .container {
+    width: 100%;
+  }
+
+  /* Banner */
+
+  h1 {
+    margin-right: 2rem;
+    padding: 2rem 4rem;
+    top: 5rem;
+    font-size: 1.33rem;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 540px) {
+
+  /* Header */
+
+  .company {
+    display: none;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: inline;
+    padding: 0px 2rem 0px 0px;
+    color: white;
+  }
+
+  /* Banner */
+
+  header .slogan {
+    justify-content: center;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .banner h1 {
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0px;
+    margin: none;
+    top: 9rem;
+  }
+
+  /* Services */
+
+  .services {
+    flex-direction: column;
+    margin: 3.77rem 0px;
+    align-items: center;
+  }
+
+  .service {
+    margin-bottom: 0px;
+    font-size: .77rem;
+    text-align: center;
+  }
+
+  .service img {
+    margin-top: 1.54rem;
+  }
+
+  #delivery {
+    margin-top: 1.54rem;
+  }
+
+  #delivery #product {
+    margin-bottom: 3.77rem;
+  }
+
+  /* About */
+
+  .about {
+    display: block;
+  }
+
+  .headline {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    width: 100%;
+  }
+  .headline p {
+    padding: 1rem .5rem 4rem 0.5rem;
+    font-size: .77rem;
+    line-height: 150%;
+  }
+
+  /* Footer */
+  footer span {
+    display: none;
+  }
+
+  .bottom {
+    justify-content: center;
+    padding: 4rem 0;
+  }
+
+  .copyright img {
+    padding: none;
+  }
+}
